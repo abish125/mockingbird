@@ -14,7 +14,6 @@ graphql-relay==0.4.5
 gunicorn==19.7.1
 html5lib==0.999
 httplib2==0.8
-ipython==1.2.1
 iso8601==0.1.11
 keyring==3.5
 lockfile==0.8
