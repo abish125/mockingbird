@@ -17,7 +17,6 @@ httplib2==0.8
 ipython==1.2.1
 iso8601==0.1.11
 keyring==3.5
-launchpadlib==1.10.2
 lazr.restfulclient==0.13.3
 lazr.uri==1.0.3
 lockfile==0.8
