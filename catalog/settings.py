@@ -47,6 +47,7 @@ GRAPHENE = {
     'SCHEMA' : 'catalog.schema.schema', #points to the schema variable in schema.py
     'SCHEMA_INDENT': 2, #defines the indentation space in the output
 }
+#
 
 WEBPACK_LOADER = {
     'DEFAULT': {
