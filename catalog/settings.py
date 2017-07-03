@@ -71,10 +71,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'catalog.urls'
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, '/static/'),
-)
+#STATIC_URL = '/static/'
+#STATICFILES_DIRS = (
+#    os.path.join(BASE_DIR, '/static/'),
+#)
 
 TEMPLATES = [
     {
