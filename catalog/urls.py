@@ -27,7 +27,6 @@ from graphene_django.views import GraphQLView
 
 import books.views
 
-
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/v1/', GraphQLView.as_view(graphiql=True)),

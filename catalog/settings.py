@@ -80,7 +80,7 @@ STATICFILES_DIRS = (
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['../catalog/books/barcode-app-master/'],
+        'DIRS': ['books/barcode-app-master/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
