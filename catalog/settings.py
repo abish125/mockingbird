@@ -47,7 +47,7 @@ GRAPHENE = {
     'SCHEMA' : 'catalog.schema.schema', #points to the schema variable in schema.py
     'SCHEMA_INDENT': 2, #defines the indentation space in the output
 }
-#
+
 
 WEBPACK_LOADER = {
     'DEFAULT': {
@@ -72,10 +72,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'catalog.urls'
 
-#STATIC_URL = '/static/'
-#STATICFILES_DIRS = (
-#    os.path.join(BASE_DIR, '/static/'),
-#)
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, '/static/'),
+)
 
 TEMPLATES = [
     {
