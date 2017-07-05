@@ -74,7 +74,7 @@ ROOT_URLCONF = 'catalog.urls'
 
 STATIC_URL = '/books/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, '/books/static/'),
+    os.path.join(BASE_DIR2, '/books/static/'),
 )
 
 TEMPLATES = [
