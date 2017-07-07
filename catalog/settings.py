@@ -72,7 +72,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'catalog.urls'
 
-STATIC_URL = '/static/'
+STATIC_URL = '/books/static/'
 STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static'),
         os.path.join(BASE_DIR2, 'static'),
@@ -130,6 +130,10 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.request',
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
