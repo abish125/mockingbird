@@ -72,16 +72,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'catalog.urls'
 
-STATIC_URL = '/books/static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR2, 'staticfiles')
 STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static'),
         os.path.join(BASE_DIR2, 'static'),
-        os.path.join(BASE_DIR, 'books/static'),
-        os.path.join(BASE_DIR2, 'books/static'),
-        '/static/',
-        '/books/static/',
-        '/app/books/static/',
     ]
+    
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 TEMPLATES = [
     {
