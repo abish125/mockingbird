@@ -2,9 +2,8 @@ import React from 'react';
 var ReactDom = require('react-dom');
 
 function fishbone_lines(p, h, size) {
-    //console.log('in function fishbone_cmp_lines')
     var ts = p
-    //console.log(ts)
+
     var cmp_h = h
     var hor_line = {width: 85 * (1/3) * size}
     var ver_line = {length: 15 * size}
@@ -32,10 +31,7 @@ function fishbone_lines(p, h, size) {
 var CbcFishbone = React.createClass({
 
   render () {
-    //console.log('render SvgLine')
     var coords = fishbone_lines(this.props.data, this.props.height, this.props.size)
-    //console.log(coords)
-
     return (
       <svg>
         <line x1={coords[0][0]} y1={coords[0][1]} x2={coords[0][2]} y2={coords[0][3]} strokeWidth={this.props.strokeWidth} stroke={this.props.stroke}/> 

@@ -30,5 +30,6 @@ import books.views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/v1/', GraphQLView.as_view(graphiql=True)),
-    url(r'^$', books.views.index, name='index')
+    url(r'^$', books.views.index, name='index'),
+    url(r'^scrape/', books.views.scrape, name='scrape')
 ]

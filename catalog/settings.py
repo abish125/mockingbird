@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'webpack_loader',
     'books',
     'graphene_django',
+    'django_extensions',
 ]
 
 GRAPHENE = {
